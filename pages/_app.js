@@ -5,7 +5,7 @@ import NextNProgress from "nextjs-progressbar";
 function MyApp({ Component, pageProps }) {
   return (
     <>
-      <NextNProgress color="#F53644" />
+      <NextNProgress color="blue" />
       <Header />
       <main className="container">
         <Component {...pageProps} />

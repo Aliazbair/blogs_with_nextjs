@@ -10,20 +10,25 @@ export default function PostPage({
   content,
 }) {
   return (
-    <>
-      <Link href='/'>
-        <a className='btn btn-back'>Go Back</a>
+    <div className='container max-w-3xl mx-auto p-5'>
+      <Link href="/">
+        <a className="bg-gradient-to-tr from-indigo-500 to-indigo-900 p-2 hover:bg-red-900 rounded w-full text-center text-white">
+          Go Back
+        </a>
       </Link>
-      <div className='card card-page'>
-        <h1 className='post-title'>{title}</h1>
-        <div className='post-date'>Posted on {date}</div>
-        <img src={cover_image} alt='' />
-        <div className='post-body'>
-          <div dangerouslySetInnerHTML={{ __html: marked(content) }}></div>
+      <div className="card card-page prose">
+        <h1 className="post-title">{title}</h1>
+        <div className="post-date">Posted on {date}</div>
+        <img src={cover_image} alt="" />
+        <div className="prose">
+          <div
+            classNam=""
+            dangerouslySetInnerHTML={{ __html: marked(content) }}
+          ></div>
         </div>
       </div>
-    </>
-  )
+    </div>
+  );
 }
 
 export async function getStaticPaths() {
