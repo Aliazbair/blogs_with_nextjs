@@ -12,7 +12,7 @@ export default function Home({ posts }) {
         <title>Dev Blog</title>
       </Head>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5 mt-12 p-4 overflow-hidden">
+      <div className=" grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5 mt-12 p-4 overflow-hidden">
         {posts.map((post, index) => (
           <Post key={index} post={post} />
         ))}

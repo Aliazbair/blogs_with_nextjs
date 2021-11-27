@@ -1,6 +1,7 @@
 import Link from 'next/link'
 
 export default function Header() {
+
   return (
     <header>
       <div className='container bg-indigo-500 p-4 rounded text-white'>
