@@ -75,7 +75,7 @@ Example of HTTP response headers from Google Chrome's network tab:
 
 ## What’s in an HTTP response body?
 Successful HTTP responses to ‘GET’ requests generally have a body which contains the requested information. In most web requests, this is HTML data which a web browser will translate into a web page.
-<!-- 
+
 ## HTTP Request / Response
 
 Communication between clients and servers is done by requests and responses:
@@ -112,4 +112,4 @@ The XHR Object is a *Web Developers Dream*, because you can:
 - Update a web page without reloading the page
 - Request data from a server - after the page has loaded
 - Receive data from a server - after the page has loaded
-- Send data to a server - in the background -->
+- Send data to a server - in the background
